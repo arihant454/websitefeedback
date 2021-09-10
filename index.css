@@ -1,76 +1,93 @@
-body {
-    background-color: #d4ecdd;
-    color: #152d35;
-   
-    font-family: "Roboto", sans-serif;
-  }
-  main {
-    width: 99vw;
-    height: 99vh;
-    background-color: #d4ecdd;
-    margin: auto;
-    text-align: center;
-  }
-  #title {
-    margin: 30px auto 0.5em auto;
-    padding-top: 20px;
-    word-spacing: 5px;
-    font-size: 40px;
-  }
-  #img-div {
-    margin: 10px 0px;
-    background-color: #9cccd6;
-    
-    
-  }
-  #image {
-    width: 40%;
-    height: 40%;
-    margin:auto;
-  /*   max-width:100; */
-  /*     hello */
-  /*   width:100%; */
-    height:auto;
-    max-width:500px;
-    margin-left:auto;
-    margin-right:auto;
-    display:block;
-  }
-  #img-caption {
-    padding: 10px;
-    font-size: larger;
-    display: block;
-  }
-  #tribute-heading {
-    margin: 35px auto;
-    font-size: 35px;
-    word-spacing: 5px;
-  }
-  #tribute-list {
-    margin: auto;
-    width: 50%;
-    padding: auto;
-  }
-  li {
-    color: #152d35;
-    text-align: left;
-    line-height: 35px;
-    font-size: 16px;
-  }
-  #speech{
-      text-transform:uppercase;
-      font-size: 40px;
-      font-family: cursive;
-      margin: auto;
-      
-  }
-  #speaker{
-    display:inline;
-    margin-right:45%;
-    margin-left:29%;
-  }
-  h6{
+body{
+  font-family: 'Open Sans', sans-serif;
+  background:url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYnNpdGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
   
-    font-size:25px;
-    margin:50px auto 20px auto;
+  background-repeat:no-repeat;
+  background-size:cover;
+  color:white;
+}
+
+#title,#description{
+  text-align:center;
+}
+#survey-form{
+  background:rgba(0,0,0,0.5);
+  height:1200px;
+  border-radius:5px;
+  width:50%;
+  margin:auto;
+}
+.field{
+  padding: 3px 5px;
+  margin:5px;
+  max-width:95%;
+  width: 95%;
+  height:30px;
+  text-align: left;
+  border-radius:5px;
+  font-size:16px;
+  margin:10px;
+  margin-left:0px;
+}
+label{
+  font-size:20px;
+  margin:10px;
+  padding:10px;
+  display:block;
+}
+.radio{
+  width: 5%;
+  height:20px;
+  position:relative;
+  top:3px;
+}
+.radiolabel{
+  padding : 0px;
+  font-size:21px;
+}
+.radiohead{
+  padding:0px;
+}
+.checkbox{
+  width:20px;
+  height:20px;
+  position:relative;
+  top:2px;
+}
+.checkboxlabel{
+  padding : 0px;
+  font-size:21px;
+  margin:5px;
+  margin-left:15px;
+}
+.textarea{
+  max-width:95%;
+  min-width:95%;
+  width: 95%;
+  height:150px;
+  max-height:150px;
+  min-height:150px;
+  font-size:20px;
+  text-align:left;
+  border-radius:3px
+}
+#submit{
+  max-width:95%;
+  width: 95%;
+  height:35px;
+  margin:10px;
+  background-color:#a52fb5;
+  border-radius:3px;
+  color:white;
+}
+
+
+@media(max-width:900px){
+  #survey-form{
+    max-width:50%;
+    min-width:100%; 
   }
+  .textarea{
+    font-size:15px;
+  }
+}

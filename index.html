@@ -44,7 +44,7 @@
       <label for="dropdown" >
         What You like About the website?
         <br>
-        <select id="dropdown" class="field">
+        <select id="dropdown" class="field" name="like:">
           <option selected>Select an option</option>
           <option>Design</option>
           <option>Functionality</option>
@@ -55,22 +55,20 @@
       What you need Improvement in?
     </label>
     <label class="checkboxlabel">
-      <input type="checkbox" class="checkbox" value="Navbar"> Navbar
+      <input type="checkbox" class="checkbox" value="Navbar" name="improvement:"> Navbar
     </label >
     <label class="checkboxlabel">
-      <input type="checkbox" class="checkbox" value="Footer"> Footer
+      <input type="checkbox" class="checkbox" value="Footer" name="improvement:"> Footer
     </label>
     <label class="checkboxlabel">
-      <input type="checkbox" class="checkbox" value="LoginPage"> Login/SignUp Page
+      <input type="checkbox" class="checkbox" value="LoginPage" name="improvement:"> Login/SignUp Page
     </label>
     <label class="checkboxlabel">
-      <input type="checkbox" class="checkbox" value="Responsivity"> Responsivity
+      <input type="checkbox" class="checkbox" value="Responsivity" name="improvement:"> Responsivity
     </label>
     
     <label>Any other suggestions or comments?
-      <textarea class="textarea" name="message" placeholder="Enter your comment here">
-      
-      </textarea>
+      <textarea class="textarea" name="message:" placeholder="Enter your comment here"></textarea>
     
     </label>
     <button type="submit" id="submit">Submit</button>
